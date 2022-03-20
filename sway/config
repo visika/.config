@@ -41,10 +41,11 @@ exec_always ~/script/random_wall.sh
 #
 # Example configuration:
 #
+set $lockcommand 'swaylock -f -c 000000 -i "/home/soft/Documenti/JoeNathan/immagini belle che per ragioni a me ignote ho voluto salvare/Sci-Fi (22).jpg"'
 exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
+         timeout 300 $lockcommand \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000'
+         before-sleep $lockcommand
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
