@@ -259,3 +259,5 @@ bindsym XF86Search exec $menu
 
 # notification daemon
 exec mako
+
+bindsym Print exec grim && notify-send "Scattato uno screenshot!"
