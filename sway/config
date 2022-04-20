@@ -237,7 +237,7 @@ bar {
 }
 
 # A 10-pixel border around every window.
-gaps inner 10
+gaps inner 5
 
 # Removes the title bar of each window.
 default_border pixel 3
